@@ -7,13 +7,15 @@
     <title>Timer</title>
     
     <script type="module" crossorigin src="/goit-js-hm-10/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hm-10/assets/styles-c9db6b34.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hm-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hm-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hm-10/assets/styles-fcbe0c9a.css">
   </head>
   <body>
     <section>
       <a href="./index.html">Go to home</a>
       <h1>Timer</h1>
-      <div>
+      <div class="set-date">
         <input type="text" id="datetime-picker" />
         <button type="button" data-start>Start</button>
       </div>
@@ -38,6 +40,7 @@
       </div>
     </section>
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     
   </body>
 </html>
