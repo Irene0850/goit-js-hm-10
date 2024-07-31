@@ -1,45 +1,87 @@
-.focus:focus {
-  outline: 1px solid #4e75ff;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
 .form {
-  margin-left: 156px;
-  width: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-left: 32px;
+  margin-top: 24px;
 }
 
-.focus {
-  margin-top: 8px;
+.form > label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form > label > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 360px;
+  height: 40px;
+  flex-shrink: 0;
   border-radius: 4px;
+  border: 1px solid #808080;
+  outline: none;
 }
 
-.radio {
-  width: 20px;
-  height: 20px;
-  margin: 20px 8px 0 48px;
-  accent-color: #4e75ff;
-  vertical-align: text-bottom;
+.form > label > input:hover {
+  border-color: #000;
+}
+
+.form > label > input:focus {
+  border-color: #4e75ff;
 }
 
 fieldset {
-  height: 78px;
   width: 360px;
-  border-radius: 4px;
+  height: 64px;
+  flex-shrink: 0;
   border: 1px solid #808080;
-  margin: 30px 0 0 0;
-  padding: 0;
+  border-radius: 4px;
 }
 
-fieldset:hover,
-fieldset:focus {
-  border: 1px solid #000;
+fieldset:hover {
+  border-color: #000;
 }
 
-.button {
-  display: block;
+.label-input {
+  display: inline-flex;
+}
+
+.radio {
+  border: 1px solid #757575;
+  border-radius: 14px;
+  width: 20px;
+  height: 20px;
+}
+
+.radio:focus {
+  background-color: #4e75ff;
+}
+
+button {
+  display: flex;
+  margin: 0;
   width: 360px;
-  margin: 24px 0 0 0;
-}
-
-legend {
-  margin: 0 0 0 28px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  cursor: pointer;
 }
