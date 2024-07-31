@@ -70,11 +70,7 @@ fieldset:hover {
   height: 20px;
 }
 
-.radio:focus {
-  background-color: #4e75ff;
-}
-
-button {
+.btn {
   display: flex;
   margin: 0;
   width: 360px;
